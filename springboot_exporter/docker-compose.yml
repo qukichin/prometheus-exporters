@@ -9,4 +9,4 @@ services:
       - .:/code
     environment:
       FLASK_ENV: development
-      SPRINGBOOT_URL: http://47.95.110.207:8080/management/health 
+      SPRINGBOOT_URL: http://10.244.244.150:8080/management/health 
