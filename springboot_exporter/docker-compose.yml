@@ -1,0 +1,12 @@
+version: '3.5'
+services:
+
+  springboot-exporter:
+    build: .
+    ports:
+      - "9055:5000"
+    volumes:
+      - .:/code
+    environment:
+      FLASK_ENV: development
+      SPRINGBOOT_URL: http://47.95.110.207:8080/management/health 
